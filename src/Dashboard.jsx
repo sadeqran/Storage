@@ -46,11 +46,18 @@ const Dashboard = () => {
           <div className="blue_box bxshadow"></div>
           <div className="middle">
             <div className="total_box bxshadow"></div>
-            <div className="total_box mr-25 bxshadow"></div>
+            <div className="mx-20"></div>
+            <div className="total_box bxshadow"></div>
           </div>
           <div className="white_box bxshadow">
             <canvas id="myChart"></canvas>
           </div>
+        </div>
+        <div className="ads">
+          <div className="header_ads"></div>
+          <div className="top bxshadow"></div>
+          <div className="my-20"></div>
+          <div className="balance bxshadow"></div>
         </div>
       </div>
     </div>
