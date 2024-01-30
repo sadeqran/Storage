@@ -1,37 +1,16 @@
-html {
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
-  direction: rtl;
-}
-
-.h1 {
-  text-align: center;
-  margin-bottom: 25px !important;
-}
-
-table {
-  text-align: right;
-}
-
-.product {
-  width: 150px;
-  text-align: center;
-}
-
-@font-face {
+/* @font-face {
   font-family: "BYekan";
   src: url("../fonts/BYekan/BYekan-webfont.eot") format("eot"),
     url("../fonts/BYekan/BYekan-webfont.woff") format("woff"),
     url("../fonts/BYekan/BYekan-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 * {
-  font-family: "BYekan";
+  /* font-family: "BYekan"; */
   box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
+  line-height: 0 !important;
 }
 
 a {
@@ -100,8 +79,40 @@ a {
 .f-1 {
   flex: 1;
 }
+html {
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 25px !important;
+}
+
+table {
+  text-align: right;
+}
+
+.product {
+  width: 150px;
+  text-align: center;
+}
+
+#myChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mx-20 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.my-20 {
+  margin-bottom: 20px !important;
+}
 
 /* #region login */
+
 .sidebar {
   /* height: 100vh; */
   margin: 0;
@@ -277,9 +288,6 @@ a {
 }
 /* #endregion */
 
-/* .table-striped{
-  margin-right: 80px ;
-} */
 .add_product {
   background: #42c58a;
   border: none;
@@ -314,7 +322,7 @@ table tr {
   /* color: #ccbca5; */
 }
 
-.header {
+.header_side {
   margin-top: 20px;
 }
 .list {
@@ -330,11 +338,7 @@ table tr {
   font-size: 25px;
   margin-left: 25px;
 }
-.welcome {
-  position: absolute;
-  top: 75px;
-  right: 300px;
-}
+
 .context {
   height: 625px;
   width: 465px;
@@ -342,19 +346,27 @@ table tr {
   margin-right: 25px;
 }
 .header_context {
-  height: 70px;
+  display: flex;
+  margin-bottom: 20px;
+  height: 50px;
   width: 465px;
+  align-items: center;
+  justify-content: space-between;
 }
+.welcome {
+  direction: rtl;
+  text-align: right;
+}
+
+.h6_welcome,
+.h3_welcome {
+  line-height: 0.5 !important;
+}
+
 .blue_box {
   width: 465px;
   height: 175px;
   background: #1ccef4;
-  border-radius: 25px;
-}
-.white_box {
-  width: 465px;
-  height: 190px;
-  background: #fff;
   border-radius: 25px;
 }
 .middle {
@@ -369,24 +381,46 @@ table tr {
   background: #fff;
   border-radius: 25px;
 }
+.white_box {
+  width: 465px;
+  height: 190px;
+  background: #fff;
+  border-radius: 25px;
+}
 
-.bxshadow {
-  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.3);
-}
-#myChart {
-  width: 100% !important;
-  height: 100% !important;
-}
-.mx-20 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.my-20 {
-  margin-bottom: 20px !important;
-}
 .ads {
   margin-right: 20px;
   width: 225px;
+}
+
+.header_ads {
+  height: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.upload {
+  background: #2e53da;
+  width: 140px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.search {
+  height: 35px;
+  width: 165px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.alert_btn {
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  width: 35px;
+  height: 35px;
 }
 .top {
   height: 345px;
@@ -397,7 +431,47 @@ table tr {
   background: #fff;
   border-radius: 25px;
   height: 190px;
+  position: relative;
 }
-.header_ads {
-  height: 70px;
+.balance_btn {
+  bottom: 15px;
+  position: absolute;
+  width: 190px;
+}
+.title_bx::before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #2e53da;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 15px;
+  position: relative;
+  top: 5px;
+}
+.title_bx {
+  height: 55px;
+  text-align: right;
+}
+.top_products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 195px;
+  height: 275px;
+  margin-right: 15px;
+}
+.top_products_bx {
+  width: 195px;
+  height: 45px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.img_icon {
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
 }
