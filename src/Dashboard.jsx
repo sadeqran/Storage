@@ -3,24 +3,11 @@ import Navbar from "./Navbar";
 import { setDashboardChart } from "./dashboardChart";
 
 const Dashboard = () => {
-  // useEffect(() => {
-  //   const labels = [
-  //     "فروردین",
-  //     "اردیبهشت",
-  //     "خرداد",
-  //     "تیر",
-  //     "مرداد",
-  //     "شهریور",
-  //     "مهر",
-  //     "آبان",
-  //     "آذر",
-  //     "دی",
-  //     "بهمن",
-  //     "اسفند",
-  //   ];
-  //   const datapoints = [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170];
-  //   setDashboardChart(labels, datapoints);
-  // }, []);
+  useEffect(() => {
+    const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
+    const datapoints = [0, 100, 0, 20];
+    setDashboardChart(labels, datapoints);
+  }, []);
 
   return (
     <div className="dashboard faj">
@@ -50,17 +37,29 @@ const Dashboard = () => {
               </h4>
             </div>
             <button className="upload bxshadow">
-              آپلود<i className="fas fa-upload mr-1"></i>
+              ورودی<i className="fas fa-upload mr-1"></i>
             </button>
           </div>
           <div className="blue_box bxshadow"></div>
           <div className="middle">
-            <div className="total_box bxshadow"></div>
+            <div className="total_box bxshadow">
+              <div className="title_bx">موجودی</div>
+              <div className="inventory">
+                <div className="num">1,134</div>
+                <div className="num_span">مورد</div>
+              </div>
+            </div>
             <div className="mx-20"></div>
-            <div className="total_box bxshadow"></div>
+            <div className="total_box bxshadow">
+              <div className="title_bx">سفارشات</div>
+              <div className="inventory">
+                <div className="num">4</div>
+                <div className="num_span">مورد</div>
+              </div>
+            </div>
           </div>
-          <div className="white_box bxshadow">
-            {/* <canvas id="myChart"></canvas> */}
+          <div className="white_box bxshadow faj">
+            <canvas id="myChart"></canvas>
           </div>
         </div>
         <div className="ads">
@@ -73,35 +72,55 @@ const Dashboard = () => {
           <div className="top bxshadow">
             <div className="title_bx">پرکاربرد ترین</div>
             <div className="top_products">
-              <div className="top_products_bx">
+              <div className="top_products_bx mb-15">
                 <img className="img_icon" src="./assets/images/keyboard.png" />
-                کیبورد
+                <div className="title_top_bx">
+                  <div>کیبورد</div>
+                  <div className="mark_to">&rsaquo;</div>
+                </div>
               </div>
-              <div className="top_products_bx">
-                {" "}
+
+              <div className="top_products_bx mb-15">
                 <img className="img_icon" src="./assets/images/mouse.png" />
-                موس
+                <div className="title_top_bx">
+                  <div>موس</div>
+                  <div className="mark_to">&rsaquo;</div>
+                </div>
               </div>
-              <div className="top_products_bx">
-                {" "}
+
+              <div className="top_products_bx mb-15">
                 <img className="img_icon" src="./assets/images/monitor.png" />
-                مانیتور
+                <div className="title_top_bx">
+                  <div>مانیتور</div>
+                  <div className="mark_to">&rsaquo;</div>
+                </div>
               </div>
-              <div className="top_products_bx">
-                {" "}
+
+              <div className="top_products_bx mb-15">
                 <img className="img_icon" src="./assets/images/printer.png" />
-                کارتریج
+                <div className="title_top_bx">
+                  <div>کارتریج</div>
+                  <div className="mark_to">&rsaquo;</div>
+                </div>
               </div>
               <div className="top_products_bx">
                 <img className="img_icon" src="./assets/images/sys.png" />
-                کیس
+                <div className="title_top_bx">
+                  <div>کیس</div>
+                  <div className="mark_to">&rsaquo;</div>
+                </div>
               </div>
             </div>
           </div>
           <div className="my-20"></div>
           <div className="balance bxshadow faj">
+            <div className="title_bx khoroji">خروجی</div>
+            <div className="inventory">
+              <div className="num">155</div>
+              <div className="num_span">مورد</div>
+            </div>
             <button className="upload balance_btn bxshadow">
-              دانلود <i className="fas fa-download mr-1"></i>
+              خروجی <i className="fas fa-download mr-1"></i>
             </button>
           </div>
         </div>

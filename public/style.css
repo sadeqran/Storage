@@ -100,8 +100,8 @@ table {
 }
 
 #myChart {
-  width: 100% !important;
-  height: 100% !important;
+  width: 90% !important;
+  height: 90% !important;
 }
 .mx-20 {
   margin-left: 10px;
@@ -109,6 +109,9 @@ table {
 }
 .my-20 {
   margin-bottom: 20px !important;
+}
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 /* #region login */
@@ -301,8 +304,8 @@ table tr {
 }
 .dashboard {
   background: #d1d8f3 !important;
-  height: 793px;
-  width: 1024px;
+  height: 100vh;
+  width: 100%;
 }
 .moraba {
   background: #f2f6fe;
@@ -362,32 +365,6 @@ table tr {
 .h3_welcome {
   line-height: 0.5 !important;
 }
-
-.blue_box {
-  width: 465px;
-  height: 175px;
-  background: #1ccef4;
-  border-radius: 25px;
-}
-.middle {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  height: 150px;
-  flex-direction: row;
-}
-.total_box {
-  width: 225px;
-  background: #fff;
-  border-radius: 25px;
-}
-.white_box {
-  width: 465px;
-  height: 190px;
-  background: #fff;
-  border-radius: 25px;
-}
-
 .ads {
   margin-right: 20px;
   width: 225px;
@@ -422,22 +399,44 @@ table tr {
   width: 35px;
   height: 35px;
 }
+
+.blue_box {
+  width: 465px;
+  height: 175px;
+  background: #1ccef4;
+  border-radius: 25px;
+}
+.middle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+}
+.total_box {
+  width: 225px;
+  background: #fff;
+  border-radius: 25px;
+}
+.white_box {
+  width: 465px;
+  height: 190px;
+  background: #fff;
+  border-radius: 25px;
+}
+
 .top {
   height: 345px;
   background: #fff;
   border-radius: 25px;
 }
-.balance {
-  background: #fff;
-  border-radius: 25px;
-  height: 190px;
-  position: relative;
+.title_bx {
+  height: 55px;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
 }
-.balance_btn {
-  bottom: 15px;
-  position: absolute;
-  width: 190px;
-}
+
 .title_bx::before {
   display: inline-block;
   content: "";
@@ -451,27 +450,61 @@ table tr {
   position: relative;
   top: 5px;
 }
-.title_bx {
-  height: 55px;
-  text-align: right;
-}
+
 .top_products {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 195px;
+  width: 190px;
   height: 275px;
   margin-right: 15px;
 }
 .top_products_bx {
   width: 195px;
-  height: 45px;
-  margin-bottom: 15px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
 .img_icon {
-  width: 45px;
-  height: 45px;
+  width: 43px;
+  height: 43px;
   margin-left: 10px;
+}
+.title_top_bx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 155px;
+  height: 43px;
+}
+.mark_to {
+  font-size: 30px;
+}
+.balance {
+  background: #fff;
+  border-radius: 25px;
+  height: 190px;
+  position: relative;
+}
+.balance_btn {
+  bottom: 15px;
+  position: absolute;
+  width: 190px;
+}
+.khoroji {
+  position: absolute;
+  width: 225px;
+  top: 0;
+}
+.inventory {
+  height: 40px;
+  width: 225px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.num {
+  font-size: 35px;
+  font-weight: 700;
 }

@@ -5,10 +5,10 @@ export const setDashboardChart = (labels, datapoints) => {
     labels: labels,
     datasets: [
       {
-        label: "فروش ماه",
+        label: "خروجی",
         data: datapoints,
         borderColor: "#0062ff",
-        fill: true,
+        fill: false,
         cubicInterpolationMode: "monotone",
         tension: 0.4,
       },
@@ -23,7 +23,7 @@ export const setDashboardChart = (labels, datapoints) => {
       plugins: {
         title: {
           display: true,
-          text: "نمودار فروش یک سال گذشته",
+          text: "آخرین خروجی ها",
         },
       },
       interaction: {
@@ -31,17 +31,17 @@ export const setDashboardChart = (labels, datapoints) => {
       },
       scales: {
         x: {
-          display: true,
+          display: false,
           title: {
             display: true,
             // text: 'زمان'
           },
         },
         y: {
-          display: true,
+          display: false,
           title: {
             display: true,
-            text: " میلیون تومان",
+            text: "تعداد",
           },
           // suggestedMin: -10,
           // suggestedMax: 200
