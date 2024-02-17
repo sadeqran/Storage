@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import { setDashboardChart } from "./dashboardChart";
 
 const Dashboard = () => {
-  useEffect(() => {
-    const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
-    const datapoints = [0, 100, 0, 20];
-    setDashboardChart(labels, datapoints);
-  }, []);
+  // useEffect(() => {
+  //   const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
+  //   const datapoints = [0, 100, 0, 20];
+  //   setDashboardChart(labels, datapoints);
+  // }, []);
 
   return (
     <div className="dashboard faj">
@@ -16,10 +16,11 @@ const Dashboard = () => {
         <div className="side bxshadow">
           <div className="header_side faj">
             <img
+              alt="/"
               className="talyImg"
               src="https://talypark.com/wp-content/uploads/2022/12/Logo-Talypark.png"
             />
-            <h4></h4>
+            <h4>Taly</h4>
           </div>
           <ul className="list faj">
             {/* <li className="li_list">
@@ -59,12 +60,20 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="white_box bxshadow faj">
-            <canvas id="myChart"></canvas>
+            {/* <canvas id="myChart"></canvas> */}
           </div>
         </div>
         <div className="ads">
           <div className="header_ads">
-            <input className="search" />
+            <div className="search">
+            <input className="search" placeholder="جست و جو"/>
+              <button className="search-btn">
+                <i className="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          
+           
+
             <button className="alert_btn bxshadow">
               <i className="fa-regular fa-bell"></i>
             </button>
@@ -73,7 +82,11 @@ const Dashboard = () => {
             <div className="title_bx">پرکاربرد ترین</div>
             <div className="top_products">
               <div className="top_products_bx mb-15">
-                <img className="img_icon" src="./assets/images/keyboard.png" />
+                <img
+                  alt="/"
+                  className="img_icon"
+                  src="./assets/images/keyboard.png"
+                />
                 <div className="title_top_bx">
                   <div>کیبورد</div>
                   <div className="mark_to">&rsaquo;</div>
@@ -81,7 +94,11 @@ const Dashboard = () => {
               </div>
 
               <div className="top_products_bx mb-15">
-                <img className="img_icon" src="./assets/images/mouse.png" />
+                <img
+                  alt="/"
+                  className="img_icon"
+                  src="./assets/images/mouse.png"
+                />
                 <div className="title_top_bx">
                   <div>موس</div>
                   <div className="mark_to">&rsaquo;</div>
@@ -89,7 +106,11 @@ const Dashboard = () => {
               </div>
 
               <div className="top_products_bx mb-15">
-                <img className="img_icon" src="./assets/images/monitor.png" />
+                <img
+                  alt="/"
+                  className="img_icon"
+                  src="./assets/images/monitor.png"
+                />
                 <div className="title_top_bx">
                   <div>مانیتور</div>
                   <div className="mark_to">&rsaquo;</div>
@@ -97,14 +118,22 @@ const Dashboard = () => {
               </div>
 
               <div className="top_products_bx mb-15">
-                <img className="img_icon" src="./assets/images/printer.png" />
+                <img
+                  alt="/"
+                  className="img_icon"
+                  src="./assets/images/printer.png"
+                />
                 <div className="title_top_bx">
                   <div>کارتریج</div>
                   <div className="mark_to">&rsaquo;</div>
                 </div>
               </div>
               <div className="top_products_bx">
-                <img className="img_icon" src="./assets/images/sys.png" />
+                <img
+                  alt="/"
+                  className="img_icon"
+                  src="./assets/images/sys.png"
+                />
                 <div className="title_top_bx">
                   <div>کیس</div>
                   <div className="mark_to">&rsaquo;</div>
