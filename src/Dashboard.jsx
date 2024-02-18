@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import { setDashboardChart } from "./dashboardChart";
 
 const Dashboard = () => {
-  // useEffect(() => {
-  //   const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
-  //   const datapoints = [0, 100, 0, 20];
-  //   setDashboardChart(labels, datapoints);
-  // }, []);
+  useEffect(() => {
+    const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
+    const datapoints = [0, 100, 0, 20];
+    setDashboardChart(labels, datapoints);
+  }, []);
 
   return (
     <div className="dashboard faj">
@@ -20,7 +20,6 @@ const Dashboard = () => {
               className="talyImg"
               src="https://talypark.com/wp-content/uploads/2022/12/Logo-Talypark.png"
             />
-            <h4>Taly</h4>
           </div>
           <ul className="list faj">
             {/* <li className="li_list">
@@ -41,7 +40,9 @@ const Dashboard = () => {
               ورودی<i className="fas fa-upload mr-1"></i>
             </button>
           </div>
-          <div className="blue_box bxshadow"></div>
+          <div className="blue_box bxshadow faj">
+            زندگی همینه ، ازش نترس ، ادامه بده
+          </div>
           <div className="middle">
             <div className="total_box bxshadow">
               <div className="title_bx">موجودی</div>
@@ -60,21 +61,22 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="white_box bxshadow faj">
-            {/* <canvas id="myChart"></canvas> */}
+            <canvas id="myChart"></canvas>
           </div>
         </div>
         <div className="ads">
           <div className="header_ads">
             <div className="search">
             <input className="search" placeholder="جست و جو"/>
-              <button className="search-btn">
+              <button className="search-btn bxshadow">
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           
            
 
-            <button className="alert_btn bxshadow">
+            <button className="alert_btn faj bxshadow">
+              <div className="num_alert_btn faj">2</div>
               <i className="fa-regular fa-bell"></i>
             </button>
           </div>

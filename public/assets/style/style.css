@@ -1,14 +1,15 @@
-/* @font-face {
+@font-face {
   font-family: "BYekan";
-  src: url("../fonts/BYekan/BYekan-webfont.eot") format("eot"),
-    url("../fonts/BYekan/BYekan-webfont.woff") format("woff"),
-    url("../fonts/BYekan/BYekan-webfont.ttf") format("truetype");
+  src: url("../fonts/BYekan.woff") format("woff"),
+    url("../fonts/BYekan.eot") format("eot"),
+    url("../fonts/BYekan.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-} */
+}
+
 
 * {
-  /* font-family: "BYekan"; */
+  font-family: "BYekan";
   box-sizing: border-box;
   line-height: 0 !important;
 }
@@ -394,14 +395,29 @@ table tr {
   margin-left: 20px;
 }
 .alert_btn {
+  position: relative;
   background: #fff;
   border: none;
   border-radius: 25px;
   width: 35px;
   height: 35px;
 }
+.num_alert_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2e53da;
+  color: #fff;
+  font-size: 15px;
+}
 
 .blue_box {
+  font-weight: 700;
+  font-size: 25px;
   width: 465px;
   height: 175px;
   background: #1ccef4;
@@ -461,10 +477,14 @@ table tr {
   margin-right: 15px;
 }
 .top_products_bx {
+  cursor: pointer;
+  border-radius: 5px;
   width: 195px;
   height: 60px;
   display: flex;
   align-items: center;
+  box-shadow: 0 0.125em 1em rgba(0, 0, 0, 0.1);
+
 }
 .img_icon {
   width: 43px;
@@ -477,10 +497,18 @@ table tr {
   align-items: center;
   width: 155px;
   height: 43px;
+  position: relative;
 }
 .mark_to {
   font-size: 30px;
+  position: absolute;
+  left: 10px;
 }
+.top_products_bx:hover{
+  color: #2e53da;
+  background: #d1d8f3;
+}
+
 .balance {
   background: #fff;
   border-radius: 25px;
@@ -514,8 +542,11 @@ table tr {
   background: #2e53da;
   border: none;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   position: absolute;
   left: 0;
   top: 0;
+}
+input:focus {
+  outline: none;
 }
