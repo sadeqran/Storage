@@ -1,6 +1,6 @@
 import React from "react";
-import { useProducts } from "./productsContext";
-import Tr from "./Tr";
+import { useProducts } from "../context/productsContext";
+import Tr from "../components/Actions";
 
 const Main = () => {
   const products = useProducts();

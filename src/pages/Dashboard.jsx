@@ -1,17 +1,15 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
-import { setDashboardChart } from "./dashboardChart";
+import { setDashboardChart } from "../utils/dashboardChart";
 
 const Dashboard = () => {
-  useEffect(() => {
-    const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
-    const datapoints = [0, 100, 0, 20];
-    setDashboardChart(labels, datapoints);
-  }, []);
+  // useEffect(() => {
+  //   const labels = ["فروردین", "اردیبهشت", "خرداد", "تیر"];
+  //   const datapoints = [0, 100, 0, 20];
+  //   setDashboardChart(labels, datapoints);
+  // }, []);
 
   return (
     <div className="dashboard faj">
-      {/* <Navbar /> */}
       <div className="moraba">
         <div className="side bxshadow">
           <div className="header_side faj">

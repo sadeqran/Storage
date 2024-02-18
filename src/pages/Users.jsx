@@ -1,6 +1,6 @@
 import React from "react";
-import { useKarbar } from "./userContext";
-import Tr from "./Tr";
+import { useKarbar } from "../context/userContext";
+import Tr from "../components/Actions";
 
 const Users = () => {
   const karbar = useKarbar();

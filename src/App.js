@@ -1,11 +1,11 @@
-import Context from "./Context";
-import Login from "./sidebar/Login";
+import Content from "./Content";
+import Login from "./Login";
 
 function App() {
   return (
     <div className="App faj">
-      {/* <Login /> */}
-      <Context />
+      <Login />
+      <Content />
     </div>
   );
 }

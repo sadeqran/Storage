@@ -25,6 +25,9 @@ a {
   --green: #42c58a;
   --gray: #eceff1;
 }
+input:focus {
+  outline: none;
+}
 
 .d-rtl {
   direction: rtl;
@@ -422,6 +425,7 @@ table tr {
   height: 175px;
   background: #1ccef4;
   border-radius: 25px;
+  color: #2e53da;
 }
 .middle {
   margin-top: 20px;
@@ -547,6 +551,4 @@ table tr {
   left: 0;
   top: 0;
 }
-input:focus {
-  outline: none;
-}
+
