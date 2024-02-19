@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Products from "./pages/Products";
 import Users from "./pages/Users";
 import { KarbarProvider } from "./context/userContext";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 const Content = () => {
   return (
