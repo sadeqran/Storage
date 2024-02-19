@@ -39,7 +39,6 @@ input:focus {
 }
 
 html {
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
   direction: rtl;
   scroll-behavior: smooth;
 }
@@ -175,6 +174,7 @@ html {
   flex-direction: row;
 }
 .total_box {
+  height: 150px;
   width: 220px;
   background: #fff;
   border-radius: 25px;

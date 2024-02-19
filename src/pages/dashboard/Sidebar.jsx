@@ -36,7 +36,7 @@ export default function Sidebar() {
             <SidebarItems
               icon="fas fa-cube"
               title="مدیریت محصول"
-              path="/products"
+              path="/product"
             />
             <SidebarItems icon="fas fa-copyright" title="مدیریت برندها" />
             <SidebarItems icon="fab fa-pagelines" title="مدیریت گارانتی ها" />
