@@ -1,10 +1,14 @@
 import React from "react";
 import Sidebar from "./dashboard/Sidebar";
+import { useProducts } from "../context/productsContext";
+import Tr from "../components/Actions";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 export default function Product() {
+  const products = useProducts();
   return (
     <div className="dashboard faj">
       <div className="moraba_vasat">
@@ -29,18 +33,32 @@ export default function Product() {
         </div> */}
         <div className="paginated_table ">
           <div className="header_paginated_table">محصولات</div>
+          <button className="add_product">
+            <i className="fa-solid fa-plus"></i>
+          </button>
           <table className="table table-striped">
-          <thead>
-          <tr className="">
-            <th scope="col">Id</th>
-            <th scope="col">محصول</th>
-            <th scope="col">واحد کالا</th>
-            <th scope="col">مکان</th>
-            <th scope="col">تاریخ</th>
-            <th scope="col">عملیات</th>
-          </tr>
-        </thead>
-            <tbody></tbody>
+            <thead>
+              <tr className="">
+                <th scope="col">Id</th>
+                <th scope="col">محصول</th>
+                <th scope="col">واحد کالا</th>
+                <th scope="col">مکان</th>
+                <th scope="col">تاریخ</th>
+                <th scope="col">عملیات</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((d) => (
+                <tr key={d.id}>
+                  <td>{d.id}</td>
+                  <td>{d.product}</td>
+                  <td>{d.quantity}</td>
+                  <td>{d.location}</td>
+                  <td>{d.added_at}</td>
+                  <Tr />
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
