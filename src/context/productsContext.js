@@ -50,6 +50,41 @@ export const ProductsProvider = ({ children }) => {
       location: "کمد8",
       added_at: "1402/11/11",
     },
+    {
+      id: 6,
+      product: "737A",
+      quantity: 2,
+      location: "کمد8",
+      added_at: "1402/11/11",
+    },
+    {
+      id: 6,
+      product: "737A",
+      quantity: 2,
+      location: "کمد8",
+      added_at: "1402/11/11",
+    },
+    {
+      id: 6,
+      product: "737A",
+      quantity: 2,
+      location: "کمد8",
+      added_at: "1402/11/11",
+    },
+    {
+      id: 6,
+      product: "737A",
+      quantity: 2,
+      location: "کمد8",
+      added_at: "1402/11/11",
+    },
+    {
+      id: 6,
+      product: "737A",
+      quantity: 2,
+      location: "کمد8",
+      added_at: "1402/11/11",
+    },
   ];
   return (
     <ProductsContext.Provider value={products}>
