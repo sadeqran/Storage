@@ -12,7 +12,15 @@
   box-sizing: border-box;
   line-height: 0 !important;
 }
-
+:root {
+  --blue: #2e53da;
+}
+.bluecolor {
+  color: var(--blue);
+}
+.bluebg {
+  background: var(--blue);
+}
 a {
   text-decoration: none !important;
 }
@@ -75,7 +83,6 @@ html {
   width: 155px;
   margin-right: 15px;
   border-radius: 25px;
-  color: #fff;
 }
 
 .header_sidebar {
@@ -101,9 +108,10 @@ html {
   border: none;
   border-radius: 5px;
   margin-bottom: 15px;
-  color: #d1d8f3;
+  color: #fff;
   display: flex;
   align-items: center;
+
 }
 .li_items_sidebar:active {
   background: #fff;
@@ -116,6 +124,7 @@ html {
 .title_items_sidebar {
   position: absolute;
   right: 40px;
+
 }
 /* #endregion */
 
@@ -339,9 +348,7 @@ html {
 }
 /* #endregion */
 
-
-
-.product_mng_box {
+/* .product_mng_box {
   flex-direction: column;
   height: 150px;
   width: 150px;
@@ -366,16 +373,48 @@ html {
   grid-template-columns: repeat(2, 150px);
   gap: 20px;
   margin-right: 20px;
+} */
+.product_context {
+  margin-right: 25px;
+  height: 625px;
+  width: 100%;
+  position: relative;
 }
 .header_paginated_table {
   font-size: 30px;
-  text-align: center;
+  height: 90px;
 }
 .add_product {
+  position: absolute;
+  width: 25px;
+  height: 25px;
   background: #42c58a;
   border: none;
-  margin-left: 25px;
-  margin-bottom: 25px;
   border-radius: 3px;
   color: #fff;
+  top: 30px;
+  left: 50px;
+}
+
+table th {
+  background: var(--blue);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle !important;
+}
+table td {
+  height: 50px !important;
+  text-align: center;
+  vertical-align: middle !important;
+}
+table tr:hover{
+  background: #d1d8f3 !important;
+  color: #2e53da;
+}
+
+.right-top-radius{
+  border-radius: 0 10px 0 0;
 }

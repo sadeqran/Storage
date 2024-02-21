@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./dashboard/Sidebar";
 import { useProducts } from "../context/productsContext";
-import Tr from "../components/Actions";
+import Actions from "../components/Actions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,15 +31,15 @@ export default function Product() {
             <span className="product_mng_title">سفارش</span>
           </div>
         </div> */}
-        <div className="paginated_table ">
-          <div className="header_paginated_table">محصولات</div>
+        <div className="product_context ">
+          <div className="header_paginated_table faj">محصولات</div>
           <button className="add_product">
             <i className="fa-solid fa-plus"></i>
           </button>
           <table className="table table-striped">
             <thead>
-              <tr className="">
-                <th scope="col">Id</th>
+              <tr className="header_tr_table">
+                <th className="right-top-radius"  scope="col">Id</th>
                 <th scope="col">محصول</th>
                 <th scope="col">واحد کالا</th>
                 <th scope="col">مکان</th>
@@ -55,7 +55,7 @@ export default function Product() {
                   <td>{d.quantity}</td>
                   <td>{d.location}</td>
                   <td>{d.added_at}</td>
-                  <Tr />
+                  <Actions />
                 </tr>
               ))}
             </tbody>
