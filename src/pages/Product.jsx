@@ -13,6 +13,7 @@ export default function Product() {
     <div className="dashboard faj">
       <div className="moraba_vasat">
         <Sidebar />
+
         {/* <div className="product_context">
           <div className="product_mng_box bxshadow" data-aos="zoom-in-down">
             <i className="fa-solid fa-download "></i>
@@ -31,9 +32,10 @@ export default function Product() {
             <span className="product_mng_title">سفارش</span>
           </div>
         </div> */}
+
         <div className="product_context ">
           <div className="header_paginated_table faj">محصولات</div>
-          <button className="add_product">
+          <button className="add_product_btn btn-success">
             <i className="fa-solid fa-plus"></i>
           </button>
           <table className="table table-striped">

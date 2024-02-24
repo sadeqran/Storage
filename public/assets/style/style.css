@@ -113,7 +113,7 @@ html {
   align-items: center;
 
 }
-.li_items_sidebar:active {
+.li_items_sidebar:hover {
   background: #fff;
   color: #2e53da;
 }
@@ -384,14 +384,12 @@ html {
   font-size: 30px;
   height: 90px;
 }
-.add_product {
+.add_product_btn {
   position: absolute;
   width: 25px;
   height: 25px;
-  background: #42c58a;
   border: none;
-  border-radius: 3px;
-  color: #fff;
+  border-radius: 5px;
   top: 30px;
   left: 50px;
 }
