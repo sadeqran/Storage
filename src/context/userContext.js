@@ -21,7 +21,7 @@ export const KarbarProvider = ({ children }) => {
       id: 2,
       username: "sadeqran",
       name: "صادق رنجبر",
-      role: "developer",
+      role: "Developer",
       link: "sadeqran",
       imgPath: "https://avatars.githubusercontent.com/u/109485162?v=4",
     },

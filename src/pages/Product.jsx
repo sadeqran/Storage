@@ -38,30 +38,34 @@ export default function Product() {
           <button className="add_product_btn btn-success">
             <i className="fa-solid fa-plus"></i>
           </button>
-          <table className="table table-striped">
-            <thead>
-              <tr className="header_tr_table">
-                <th className="right-top-radius"  scope="col">Id</th>
-                <th scope="col">محصول</th>
-                <th scope="col">واحد کالا</th>
-                <th scope="col">مکان</th>
-                <th scope="col">تاریخ</th>
-                <th scope="col">عملیات</th>
-              </tr>
-            </thead>
-            <tbody>
-              {products.map((d) => (
-                <tr key={d.id}>
-                  <td>{d.id}</td>
-                  <td>{d.product}</td>
-                  <td>{d.quantity}</td>
-                  <td>{d.location}</td>
-                  <td>{d.added_at}</td>
-                  <Actions />
+          <div className="jadval">
+            <table className="table table-striped">
+              <thead>
+                <tr className="header_tr_table">
+                  <th className="right-top-radius" scope="col">
+                    Id
+                  </th>
+                  <th scope="col">محصول</th>
+                  <th scope="col">واحد کالا</th>
+                  <th scope="col">مکان</th>
+                  <th scope="col">تاریخ</th>
+                  <th scope="col">عملیات</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {products.map((d) => (
+                  <tr key={d.id}>
+                    <td>{d.id}</td>
+                    <td>{d.product}</td>
+                    <td>{d.quantity}</td>
+                    <td>{d.location}</td>
+                    <td>{d.added_at}</td>
+                    <Actions />
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

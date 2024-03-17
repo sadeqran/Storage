@@ -416,3 +416,8 @@ table tr:hover{
 .right-top-radius{
   border-radius: 0 10px 0 0;
 }
+.jadval{
+  height: 535px;
+  width: 100%;
+  overflow: auto;
+}
