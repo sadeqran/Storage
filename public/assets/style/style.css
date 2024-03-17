@@ -349,7 +349,7 @@ html {
 }
 /* #endregion */
 
-/* .product_mng_box {
+.product_mng_box {
   flex-direction: column;
   height: 150px;
   width: 150px;
@@ -374,7 +374,7 @@ html {
   grid-template-columns: repeat(2, 150px);
   gap: 20px;
   margin-right: 20px;
-} */
+}
 .product_context {
   margin-right: 25px;
   height: 625px;

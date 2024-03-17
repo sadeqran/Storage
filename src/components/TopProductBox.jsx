@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 export default function TopProductBox({ title, imgPath, path }) {
   return (
-    <NavLink to={path}>
+    <NavLink  to={`/kala/${productId}`}>
       <div className="top_products_bx mb-15" title={title}>
-        <img
+        <img 
           alt="/"
           className="img_icon"
           src={`./assets/images/${imgPath}.png`}
