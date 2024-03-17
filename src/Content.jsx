@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import User from "./pages/User";
 import { KarbarProvider } from "./context/userContext";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Kala from "./pages/Kala";
 
 const Content = () => {
   return (
@@ -12,6 +13,7 @@ const Content = () => {
       <ProductsProvider>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/kala" element={<Kala />} />
           <Route path="/product" element={<Product/>} />
           <Route path="/users" element={<User />} />
         </Routes>

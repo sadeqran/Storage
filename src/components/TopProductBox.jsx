@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function TopProductBox({title,imgPath}) {
+export default function TopProductBox({ title, imgPath, path }) {
   return (
-    <div className="top_products_bx mb-15">
-                <img
-                  alt="/"
-                  className="img_icon"
-                  src={`./assets/images/${imgPath}.png`}
-                />
+    <NavLink to={path}>
+      <div className="top_products_bx mb-15" title={title}>
+        <img
+          alt="/"
+          className="img_icon"
+          src={`./assets/images/${imgPath}.png`}
+        />
 
-                <div className="title_top_bx">
-                  <div>{title}</div>
-                  <div className="mark_to">&rsaquo;</div>
-                </div>
-                
-              </div>
-  )
+        <div className="title_top_bx">
+          <div>{title}</div>
+          <div className="mark_to">&rsaquo;</div>
+        </div>
+      </div>
+    </NavLink>
+  );
 }
