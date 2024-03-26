@@ -112,7 +112,6 @@ html {
   color: #fff;
   display: flex;
   align-items: center;
-
 }
 .li_items_sidebar:hover {
   background: #fff;
@@ -125,7 +124,6 @@ html {
 .title_items_sidebar {
   position: absolute;
   right: 40px;
-
 }
 /* #endregion */
 
@@ -368,7 +366,7 @@ html {
 .product_mng_box:hover {
   background: #d1d8f3;
 }
-.product_context {
+.product_context_kala {
   display: grid;
   grid-template-rows: repeat(2, 150px);
   grid-template-columns: repeat(2, 150px);
@@ -409,15 +407,15 @@ table td {
   text-align: center;
   vertical-align: middle !important;
 }
-table tr:hover{
+table tr:hover {
   background: #d1d8f3 !important;
   color: #2e53da;
 }
 
-.right-top-radius{
+.right-top-radius {
   border-radius: 0 10px 0 0;
 }
-.jadval{
+.jadval {
   height: 535px;
   width: 100%;
   overflow: auto;

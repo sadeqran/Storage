@@ -7,7 +7,7 @@ export default function Kala() {
       <div className="moraba_vasat">
         <Sidebar />
 
-        <div className="product_context">
+        <div className="product_context_kala">
           <div className="product_mng_box bxshadow" data-aos="zoom-in-down">
             <i className="fa-solid fa-download "></i>
             <span className="product_mng_title">خروجی</span>
