@@ -13,8 +13,8 @@ const Content = () => {
       <ProductsProvider>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/kala" element={<Kala />} />
-          <Route path="/product" element={<Product/>} />
+          <Route path="/kala/:productId" element={<Kala />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/users" element={<User />} />
         </Routes>
       </ProductsProvider>

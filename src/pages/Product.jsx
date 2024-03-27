@@ -27,8 +27,7 @@ export default function Product() {
                     Id
                   </th>
                   <th scope="col">محصول</th>
-                  <th scope="col">واحد کالا</th>
-                  <th scope="col">مکان</th>
+                  <th scope="col">موجودی</th>
                   <th scope="col">تاریخ</th>
                   <th scope="col">عملیات</th>
                 </tr>
@@ -39,7 +38,6 @@ export default function Product() {
                     <td>{d.id}</td>
                     <td>{d.product}</td>
                     <td>{d.quantity}</td>
-                    <td>{d.location}</td>
                     <td>{d.added_at}</td>
                     <Actions />
                   </tr>
